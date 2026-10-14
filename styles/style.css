@@ -1,0 +1,624 @@
+
+@import "tailwindcss";
+
+/* ================= GLOBAL CSS ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.site-header {
+  width: 100%;
+  background-color: #000;
+}
+
+.nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Brand */
+
+.brand {
+  flex-shrink: 0;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.brand h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Navigation Links */
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #a6a6ad;
+  font-size: 14px;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #b4f66a;
+}
+
+/* Navbar Actions */
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.nav-icons select {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 8px 4px;
+  cursor: pointer;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 20px;
+  border: 1px solid #b4f66a;
+  border-radius: 7px;
+
+  background-color: #b4f66a;
+  color: #000;
+
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  transition: 0.25s ease;
+}
+
+.nav-button:hover {
+  background-color: #a3e85c;
+  transform: translateY(-2px);
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+  width: 100%;
+  min-height: 540px;
+
+  padding: 30px 5% 55px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  background-color: #000;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 35px;
+}
+
+
+/* ================= CENTER CONTENT ================= */
+
+.hero-content {
+  width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Small Green Dot + Label */
+
+.circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+.circle-btn .circle {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background-color: #b4f66a;
+}
+
+.circle-btn h4 {
+  color: #a6a6ad;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+
+/* ================= HERO HEADING ================= */
+
+.hero-content h1 {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto 27px;
+
+  color: #fff;
+
+  font-size: clamp(40px, 4.6vw, 68px);
+  font-weight: 750;
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+#hmm {
+  color: #b4f66a;
+}
+
+
+/* ================= HERO DESCRIPTION ================= */
+
+.hero-content p {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto 25px;
+
+  color: #a6a6ad;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+/* ================= HERO BUTTONS ================= */
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.container-btn a {
+  min-height: 53px;
+  padding: 15px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.button-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Primary Button */
+
+.primary-btn {
+  background-color: #b4f66a;
+  color: #000;
+  border: 1px solid #b4f66a;
+}
+
+.primary-btn:hover {
+  background-color: #a2e957;
+  border-color: #a2e957;
+  transform: translateY(-2px);
+}
+
+/* Secondary Button */
+
+.secondary-btn {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #777;
+}
+
+.secondary-btn:hover {
+  color: #b4f66a;
+  border-color: #b4f66a;
+  transform: translateY(-2px);
+}
+
+
+/* ================= SIDE IMAGES ================= */
+
+.container-img {
+  position: relative;
+  width: 100%;
+}
+
+.container-img img {
+  display: block;
+
+  width: 100%;
+  height: 280px;
+
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Left Image */
+
+.left-img {
+  transform: translateY(-8px);
+}
+
+/* Right Image */
+
+.right-img {
+  transform: translateY(35px);
+}
+
+
+/* ================= IMAGE DECORATIONS ================= */
+
+/* Green Circle at Bottom Right */
+
+.image-dot {
+  position: absolute;
+
+  width: 36px;
+  height: 36px;
+
+  right: -14px;
+  bottom: -14px;
+
+  border-radius: 50%;
+  background-color: #b4f66a;
+}
+
+/* Green Ring Above Right Image */
+
+.image-ring {
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  top: -43px;
+  left: -14px;
+
+  border: 1px solid #b4f66a;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.card{
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.main-container-card {
+  max-width: 324px;
+  width: 100%;
+  border: 1px solid #77777783;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main-container-card h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.headline{
+    margin-top: 40px;
+    color: #777777a8;
+}
+/* ================= TABLET RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .nav {
+    gap: 15px;
+  }
+
+  .brand h2 {
+    font-size: 20px;
+  }
+
+  .nav-links ul {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .main-container {
+    grid-template-columns: 160px minmax(0, 1fr) 160px;
+    gap: 22px;
+  }
+
+  .container-img img {
+    height: 230px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(38px, 4.5vw, 54px);
+    letter-spacing: -1px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+
+
+
+/* ================= SMALL TABLET ================= */
+
+@media (max-width: 850px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+  }
+
+  .nav-links ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .main-container {
+    grid-template-columns: 120px minmax(0, 1fr) 120px;
+    gap: 18px;
+  }
+
+  .container-img img {
+    height: 190px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .circle-btn h4 {
+    font-size: 10px;
+  }
+
+  .container-btn a {
+    padding: 13px 15px;
+    gap: 10px;
+  }
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 650px) {
+  .nav {
+    padding: 18px 20px;
+  }
+
+  .brand img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand h2 {
+    font-size: 18px;
+  }
+
+  .nav-icons {
+    gap: 8px;
+  }
+
+  .nav-button {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .nav-links ul {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  /* Hero Layout */
+
+  .hero-section {
+    min-height: auto;
+    padding: 65px 20px 45px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  /* Content First */
+
+  .hero-content {
+    order: 1;
+  }
+
+  .circle-btn {
+    margin-bottom: 22px;
+  }
+
+  .hero-content h1 {
+    max-width: 500px;
+    font-size: clamp(36px, 9vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -1.3px;
+    margin-bottom: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 23px;
+  }
+
+  .container-btn {
+    gap: 10px;
+  }
+
+  .container-btn a {
+    min-height: 48px;
+    padding: 13px 16px;
+    font-size: 13px;
+  }
+
+  /* Side Image Layout */
+
+  .container-img {
+    max-width: 340px;
+  }
+
+  .container-img img {
+    height: 230px;
+  }
+
+  .left-img {
+    display: none;
+  }
+
+  .right-img {
+    order: 2;
+    transform: none;
+  }
+
+  .image-ring {
+    top: -20px;
+    left: -10px;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+  .brand h2 {
+    font-size: 16px;
+  }
+
+  .nav {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .nav-icons select {
+    font-size: 12px;
+  }
+
+  .nav-button {
+    padding: 9px;
+  }
+
+  .nav-links ul {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .hero-section {
+    padding: 50px 16px 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .circle-btn h4 {
+    font-size: 9px;
+  }
+
+  .container-btn a {
+    gap: 8px;
+    padding: 12px;
+  }
+}
