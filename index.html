@@ -1,247 +1,241 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Ling Pong | Software Development Company</title>
+  <meta name="description" content="Dev Ling Pong designs, develops and scales web and mobile software for startups and enterprises." />
 
-    <title>Dev Ling Pong | Software Development Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
 
-    <!-- Tailwind CSS Browser CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
-    
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="brand">
+        <img src="media/Brand mark.png" alt="Dev Ling Pong Logo" />
+        <h2>Dev Ling Pong</h2>
+      </a>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-
-  <body>
-    <!-- ================= HEADER / NAVBAR ================= -->
-    <header class="site-header">
-      <nav class="nav">
-        <!-- Brand -->
-        <div class="brand flex items-center gap-2">
-          <img src="media/Brand mark.png" alt="Dev Ling Pong Logo" />
-          <h2>Dev Ling Pong</h2>
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="nav-links">
-          <ul class="flex items-center gap-5">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#case-study">Case Study</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Navbar Actions -->
-        <div class="nav-icons flex items-center gap-4">
-          <select name="language" id="language" aria-label="Select language">
-            <option value="en">EN</option>
-            <option value="bn">BN</option>
-          </select>
-
-          <a href="#contact" class="nav-button flex items-center gap-2">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </nav>
-    </header>
-
-    <!-- ================= MAIN ================= -->
-    <main>
-      <!-- ================= HERO SECTION ================= -->
-      <section class="hero-section">
-        <div class="main-container">
-
-          <!-- Left Image -->
-          <div class="container-img left-img">
-            <img
-              src="media/Collaboration.png"
-              alt="Team collaborating in an office"
-            />
-
-          
-          </div>
-
-          <!-- Center Content -->
-          <div class="hero-content">
-            <div class="circle-btn">
-              <span class="circle"></span>
-              <h4>SOFTWARE DEVELOPMENT COMPANY</h4>
-            </div>
-
-            <h1>
-              We Create Software for a
-              <span id="hmm">Sustainable Future</span>
-            </h1>
-
-            <p>
-              From startups to enterprises, we design, develop, and scale
-              web &amp; mobile solutions that drive real results.
-            </p>
-
-            <div class="container-btn">
-              <a href="#contact" class="primary-btn">
-                Get Started
-                <span class="button-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-              </a>
-
-              <a href="#company-deck" class="secondary-btn">
-                Company Deck
-                <span class="button-icon"><i class="fa-solid fa-download"></i></span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Image -->
-          <div class="container-img right-img">
-            <img
-              src="media/Collaboration.png"
-              alt="Team planning a software project"
-            />
-
-            <span class="image-ring"></span>
-          </div>
-
-        </div>
-      </section>
-
-      
-      <div class="headline">
-        <hr>
-      </div>
-
-      <section class="card">
-        
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Project Complete</p>
-        </div>
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Clients Served</p>
-        </div>
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Team Members</p>
-        </div>
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Years Experience</p>
-        </div>
-      </section>
-
-      <!-- Other sections can be added here -->
-      <section id="services"></section>
-      <section id="about"></section>
-      <section id="career"></section>
-      <section id="case-study"></section>
-      <section id="contact"></section>
-    </main>
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="site-footer" id="company-deck">
-  <div class="footer-container">
-
-    <!-- Footer Top -->
-    <div class="footer-top">
-
-      <!-- Company Info -->
-      <div class="footer-brand">
-        <a href="#" class="footer-logo">
-          <img src="media/Brand mark.png" alt="Dev Ling Pong Logo" />
-          <span>Dev Ling Pong</span>
-        </a>
-
-        <p>
-          We create innovative software solutions that help businesses
-          grow, scale, and build a more sustainable future.
-        </p>
-
-        <div class="footer-socials">
-          <a href="#" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-links">
-        <h3>Quick Links</h3>
+      <div class="nav-links">
         <ul>
+          <li><a href="#services">Services</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#career">Careers</a></li>
-          <li><a href="#case-study">Case Studies</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#case-study">Case Study</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
 
-      <!-- Services -->
-      <div class="footer-links">
-        <h3>Our Services</h3>
-        <ul>
-          <li><a href="#services">Web Development</a></li>
-          <li><a href="#services">Mobile App Development</a></li>
-          <li><a href="#services">UI/UX Design</a></li>
-          <li><a href="#services">Software Solutions</a></li>
-          <li><a href="#services">IT Consulting</a></li>
+      <div class="nav-icons">
+        <select name="language" id="language" aria-label="Select language">
+          <option value="en">EN</option>
+          <option value="bn">BN</option>
+        </select>
+        <a href="#contact" class="nav-button">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero-section">
+      <div class="main-container">
+        <div class="container-img left-img">
+          <img src="media/Collaboration.png" alt="Team collaborating in an office" />
+        </div>
+
+        <div class="hero-content">
+          <div class="circle-btn">
+            <span class="circle"></span>
+            <h4>SOFTWARE DEVELOPMENT COMPANY</h4>
+          </div>
+
+          <h1>We Create Software for a <span id="hmm">Sustainable Future</span></h1>
+
+          <p>From startups to enterprises, we design, develop, and scale web &amp; mobile solutions that drive real results.</p>
+
+          <div class="container-btn">
+            <a href="#contact" class="primary-btn">
+              Get Started
+              <span class="button-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+            <a href="#company-deck" class="secondary-btn">
+              Company Deck
+              <span class="button-icon"><i class="fa-solid fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="container-img right-img">
+          <img src="media/Collaboration.png" alt="Team planning a software project" />
+          <span class="image-ring"></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="headline"><hr /></div>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="stat"><h2>XX++</h2><p>Projects Completed</p></div>
+      <div class="stat"><h2>XX++</h2><p>Clients Served</p></div>
+      <div class="stat"><h2>XX++</h2><p>Team Members</p></div>
+      <div class="stat"><h2>XX++</h2><p>Years Experience</p></div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="svc-section" id="services">
+      <div class="svc-container">
+        <div class="svc-head">
+          <div>
+            <span class="svc-eyebrow"><i class="svc-dot"></i> Our Services</span>
+            <h2>Solutions That Drive Digital Growth</h2>
+          </div>
+          <p>From the first idea to the next stage of growth, we bring design and engineering together to build software that moves your business forward.</p>
+        </div>
+
+        <div class="svc-grid">
+          <article class="svc-card">
+            <div class="svc-top"><span class="svc-icon"><i class="fa-solid fa-mobile-screen"></i></span><span class="svc-num">01</span></div>
+            <h3>Mobile App Development</h3>
+            <p>Intuitive iOS and Android apps, built for the way your users move.</p>
+            <a href="#contact" class="svc-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-top"><span class="svc-icon"><i class="fa-solid fa-globe"></i></span><span class="svc-num">02</span></div>
+            <h3>Web Development</h3>
+            <p>Fast, accessible web experiences that connect you with your audience.</p>
+            <a href="#contact" class="svc-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-top"><span class="svc-icon"><i class="fa-solid fa-database"></i></span><span class="svc-num">03</span></div>
+            <h3>Backend Development</h3>
+            <p>Resilient APIs and architecture that scale along with your product.</p>
+            <a href="#contact" class="svc-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-top"><span class="svc-icon"><i class="fa-solid fa-rocket"></i></span><span class="svc-num">04</span></div>
+            <h3>MVP Development</h3>
+            <p>Turn your idea into a first product. Launch, learn, and take the next step.</p>
+            <a href="#contact" class="svc-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-top"><span class="svc-icon"><i class="fa-solid fa-pen-nib"></i></span><span class="svc-num">05</span></div>
+            <h3>UI/UX Design</h3>
+            <p>Thoughtful design, seamless journeys. Make complex products feel simple.</p>
+            <a href="#contact" class="svc-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-top"><span class="svc-icon"><i class="fa-solid fa-code"></i></span><span class="svc-num">06</span></div>
+            <h3>Custom Development</h3>
+            <p>Software built for your workflows, your challenges, and your next step.</p>
+            <a href="#contact" class="svc-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INDUSTRIES ============ -->
+    <section class="ind-section" id="industries">
+      <div class="svc-container">
+        <div class="svc-head">
+          <div>
+            <span class="svc-eyebrow"><i class="svc-dot"></i> Industries</span>
+            <h2>Areas of Our Expertise</h2>
+          </div>
+          <p>We have shipped products across many sectors, so we already know the rules, the users, and the pitfalls of your market.</p>
+        </div>
+
+        <ul class="ind-list">
+          <li><button type="button" class="ind-pill is-active" aria-pressed="true"><i class="fa-solid fa-bag-shopping"></i> E-commerce</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-heart-pulse"></i> Healthcare</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-building-columns"></i> Fintech</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-graduation-cap"></i> Education</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-truck-fast"></i> Logistics</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-house"></i> Real Estate</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-utensils"></i> Food &amp; Delivery</button></li>
+          <li><button type="button" class="ind-pill" aria-pressed="false"><i class="fa-solid fa-plane"></i> Travel</button></li>
         </ul>
       </div>
+    </section>
 
-      <!-- Contact Info -->
-      <div class="footer-contact">
-        <h3>Get in Touch</h3>
+    <!-- Baki section gulo pore add korba -->
+    <section id="about"></section>
+    <section id="career"></section>
+    <section id="case-study"></section>
+    <section id="contact"></section>
+  </main>
 
-        <p>
-          <i class="fa-solid fa-location-dot"></i>
-          <span>Dhanmondi, Dhaka</span>
-        </p>
-
-        <p>
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:hello@devlingpong.com">
-            hello@devlingpong.com
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="company-deck">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <img src="media/Brand mark.png" alt="Dev Ling Pong Logo" />
+            <span>Dev Ling Pong</span>
           </a>
-        </p>
+          <p>We create innovative software solutions that help businesses grow, scale, and build a more sustainable future.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
 
-        <p>
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:+8801000000000">+880 1845196403</a>
-        </p>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#career">Careers</a></li>
+            <li><a href="#case-study">Case Studies</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
 
-        <a href="#contact" class="footer-cta">
-          Let's Work Together
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+        <div class="footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile App Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Software Solutions</a></li>
+            <li><a href="#services">IT Consulting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Get in Touch</h3>
+          <p><i class="fa-solid fa-location-dot"></i><span>Dhanmondi, Dhaka</span></p>
+          <p><i class="fa-solid fa-envelope"></i><a href="mailto:hello@devlingpong.com">hello@devlingpong.com</a></p>
+          <p><i class="fa-solid fa-phone"></i><a href="tel:+8801845196403">+880 1845196403</a></p>
+          <a href="#contact" class="footer-cta">Let's Work Together <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
       </div>
 
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>
-        &copy; <span id="current-year"></span> Dev Ling Pong.
-        All rights reserved.
-      </p>
-
-      <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Dev Ling Pong. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
       </div>
     </div>
+  </footer>
 
-  </div>
-</footer>
-  </body>
+  <script src="js/script.js"></script>
+</body>
 </html>
